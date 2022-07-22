@@ -1,3 +1,5 @@
+## 숫자형 ##
+
 # 덧셈
 print(4.0 + 7)
 
@@ -19,4 +21,120 @@ print(6.0 / 2.0)
 
 print(2 + 3 * 2)     # 사칙연산 법칙 그대로 
 
-#fd
+# floor division (버림 나눗셈)
+print(7 // 2)     # =3 몫의 소수부분을 버림
+print(8 // 3)     # =2
+print(8.0 // 3)   # =2.0 둘 중의 하나가 소수형이면 결과값도 소수형
+
+# round (반올림, 정수로)
+print(round(3.1415928563))  # =3
+print(round(3.1451363232, 2)) # 소수 셋째 자리에서 반올 / =3.15
+print(round(3.14563734243, 4)) # 소수 다섯째 자리에서 반올림 / =3.1456
+
+
+### 문자열 ###
+# '' (따옴표), ""(큰따옴표) 사용 / 
+
+
+# 문자열 사칙연산 맟 연결)
+print("5" + "4")  # =54
+print("Hello" * 3) # =HelloHelloHello
+print("I\'m \"excited\" to learn Python!")  # \는 바로 앞의 따옴표를 의도했다라는 것을 표현
+                                            # = I'm "excited" to learn Python!
+
+
+# 형 변환(Type Conversion or Type Casting)
+print(int(3.8))  # =3 / int는 정수형으로 변환
+print(float(3))  # =3.0 / float는 소수형으로 변환
+print(int("2") + int("5")) # =7 / int는 문자열 -> 정수형 변환 가능
+print(float("1.1") + float("2.5"))  # = 3.6 / float는 문자열 -> 소수형 변환 가능
+print(str(2) + str(5))  # =25 / str은 문자열로 변환
+
+age = 7
+print("제 나이는" + str(age) + "살입니다.")  # 문자형과 정수형을 연결못하기 때문에 age라는 정수형을 문자형으로 바꿔줌
+
+
+# format을 이용한 문자열 포맷팅 (format method, .format 괄호 안 내용들은 문자열로 형변환)
+year = 2019
+month = 5
+day = 29
+
+print("오늘은" + str(year) + "년" + str(month) + "월" + str(day) + "일")  #이런 방법은 복잡
+print("오늘은 {}년 {}월 {}일입니다.". format(year, month, day))  # {} 중괄호로 대체
+                                                                # . format으로 파라미터 입력 
+                                                                # 코드가 훨씬 짧아짐
+
+date_string = "오늘은 {}년 {}월 {}일입니다."
+print(date_string.format(year, month, day))   # 이러한 방법도 가능
+print(date_string.format(year, month, day+1))  # 다음날을 나타낼 수 있음
+
+date_string = "오늘은 {}년 {:02d}월 {:02d}일입니다."  #만약 05월 등으로 나타내고 싶을 때
+print(date_string.format(year, month, day)) 
+
+
+# 만약 format 나열 순서를 바꾸고 싶으면?
+print("저는 {1}, {0}, {2}를 좋아합니다". format("박지성", "유재석", "빌게이츠"))
+
+
+# 문자열에 숫자들이 들어갔을 때
+num_1 = 1
+num_2 = 3
+
+print("{0} 나누기 {1}은 {2}입니다.". format(num_1, num_2, num_1 / num_2))  # 결과는 1 나누기 3은 0.3333333333333333입니다.
+print("{0} 나누기 {1}은 {2:.2f}입니다.". format(num_1, num_2, num_1 / num_2))  # 소수점 둘째 자리로 반올림 => 1 나누기 3은 0.33입니다.
+
+# 새로운 방식 (f-string)
+name = "최지웅"
+age = 32
+
+print(f"제 이름은 {name}이고 {age}살입니다.")  # 파이썬 버전 3.6부터 새로 나온 방식, 더 선호하는 추세
+
+
+# 불대수 : True, False / 불대수의 연산 : AND, OR, NOT
+
+# 불린 (Boolean) : 참과 거짓을 표현하는 자료형
+print(True)
+print(False)   # 따옴표 없이 써야함!
+
+print(True and True)    # True
+print(True and False)   # False
+print(False and True)   # False
+print(False and False)  # False
+
+print(True or True)    # True
+print(True or False)   # True
+print(False or True)   # True
+print(False or False)  # False
+
+print(not True)    # False
+print(not False)   # True
+
+print(2 > 1)     # True
+print(2 < 1)     # Flase
+print(3 >= 2)    # True
+print(3 <= 3)    # True
+print(2 == 2)    # True   # ==는 "같다"라는 뜻
+print(2 != 2)    # False  # !=는 "같지 않다"라는 뜻
+
+print(2 > 1 and "Hello" == "Hello")    # True and True
+
+print(not not True)   # not False => True
+print(not not False)  # not True => False
+
+print(7 == 7 or (4 < 3 and 12 > 10))   # True or False => True
+
+x = 3
+print(x > 4 or not (x < 2 or x == 3))    # False or not True => False or False => False
+
+
+# type 함수 : 어떤 자료형인지 확인 가능
+print(type(3))     # class 'int'
+print(type(3.0))   # class 'float'
+print(type("3"))   # class 'str'
+print(type(True))  # class 'bool'
+
+def hello():
+    print("Hello world!")
+
+print(type(hello))   # class 'function' 함수
+print(type(print))   # class 'builtin_function_or_method' (파이썬에) 내장된 함수

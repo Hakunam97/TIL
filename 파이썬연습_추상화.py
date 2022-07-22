@@ -1,0 +1,110 @@
+### 추상화 ###
+
+# return문 제대로 이해!
+def square(x):
+    print("함수 시작")
+    return x * x
+    print("함수 끝")
+
+print(square(3))         # return문은 (1) 값 돌려주기 
+print("Hello World!")    # (2) 함수 즉시 종료기능도 있음
+                         # print("함수 끝")은 사용X (Dead Code)
+
+# return문과 print문 차이
+def print_square(x):
+    print(x * x)
+
+def get_square(x):
+    return x * x
+
+print_square(3)       # 9
+get_square(3)   # 출력하라고 하는 print문은 없어서 아무것도  출력x, 프로그램이 끝나버림
+print(get_square(3))  # 9
+print(print_square(3))   # print(None) => None
+#------------------------------------------------------------------------------------------
+
+# Optional parameter (파라미터에 기본값 설정)
+def myself(name, age, nationality = "한국"):  # nationality가 optional parameter
+    print("내 이름은 {}". format(name))
+    print("나이는 {}살". format(age))
+    print("국적은 {}". format(nationality))
+
+myself("김학남", 26, "미국")  # optional parameter 제공
+myself("김학남", 26)  # optional parameter 제공X
+# optional parameter는 모두 마지막에!! (중간에 넣으면 오류)
+# def myself(name, nationality = "한국", age) => 오류!
+#------------------------------------------------------------------------------------------
+
+# Synthactic Sugar (다음 두 줄은 같다.)
+
+# x = x + 1
+# x += 1
+
+# x = x * 2
+# x *= 2
+
+# x = x - 3
+# x -= 3
+#------------------------------------------------------------------------------------------
+
+# Scope (변수가 유효한 범위)
+def my_function():
+    x = 3           # x는 로컬 변수 (my_function에서만 사용)
+    print(x)
+my_function()       # 2
+
+x = 2               # x는 글로벌 변수 (모든 곳에서 사용)
+def my_function():
+    print(x)
+my_function()       # 2
+print(x)            # 2
+
+x = 2               # x는 글로벌 변수
+def my_function():
+    x = 3           # x는 로컬 변수
+    print(x)
+my_function()       # 3
+print(x)            # 2
+#------------------------------------------------------------------------------------------
+
+# 상수 (constant) - 대문자로!
+PI = 3.14   # 원주율 '파이' 
+
+def calculate_area(r):            # 반지름을 받아서 원의 넓이 계산
+    return PI * r * r
+
+radius = 4  # 반지름
+print("반지름이 {}면, 넓이는 {}". format(radius, calculate_area(radius)))
+
+#------------------------------------------------------------------------------------------
+# 코드 스타일
+
+# - 변수를 표현해서(+ 명확한 변수 이름) 쉽게 코드가 보임 => 좋은 코드
+# - 코드별로 간격 띄우기
+# 비교
+print(6.28*4)
+print(3.14*4*4)
+print(6.28*8)
+print(3.14*8*8)
+
+# 보다는
+PI = 3.14 # 원주율(파이)
+
+# 반지름이 r인 원의 둘레 계산
+def calculate_circumference(r):
+    return 2 * PI * r
+
+# 반지름이 r인 원의 넓이 계산
+def calculate_area(r):
+    return PI * r * r
+
+radius = 4 #반지름
+print(calculate_circumference(radius))
+print(calculate_area(radius))
+
+radius = 8 #반지름
+print(calculate_circumference(radius))
+print(calculate_area(radius))
+
+# Python은 "PEP8" 이라는 스타일가이드가 제일 많이 사용됨!!
+#------------------------------------------------------------------------------------------
