@@ -1,3 +1,150 @@
 # 6시간 코딩 강의영상
 # 6-1 if) 부터 시작
 
+## if
+
+weather = "맑음"
+if weather == "비":
+    print("우산을 챙기세요")
+elif weather == "미세먼지":
+    print("마스크를 챙기세요")
+else:
+    print("오늘은 준비물이 필요 없어요")
+
+weather = input("오늘 날씨는 어때요? ")    # input: 질문 뒤 사용자가 값을 입력 (문자열로 값을 받음)
+if weather == "비" or weather == "눈":
+    print("우산을 챙기세요")
+elif weather == "미세먼지":
+    print("마스크를 챙기세요")
+else:
+    print("오늘은 준비물이 필요 없어요")
+
+temp = int(input("기온은 어때요? "))
+if 30 <= temp:
+    print("너무 더워요. 나가지 마세요.")
+elif 10 <= temp < 30:
+    print("괜찮은 날씨에요.")
+elif 0 <= temp < 10:
+    print("외투를 챙기세요")
+else:
+    print("너무 추워요. 나가지 마세요")
+#-----------------------------------------------------------
+
+## for (반복문)
+
+for waiting_no in [0, 1, 2, 3, 4]:    # 숫자 순서대로 변수에 들어가는 원리
+    print("대기번호 : {}".format(waiting_no))    # 똑같은 문장을 5번 반복해서 출력함.
+
+for waiting_no in range(5):    # 0, 1, 2, 3, 4
+    print("대기번호 : {}".format(waiting_no))    #
+
+for waiting_no in range(1, 6):    # 1, 2, 3, 4, 5
+    print("대기번호 : {}".format(waiting_no))
+
+starbucks = ["아이언맨", "토르", "그루트"]
+for customer in starbucks:    # customer에 하나씩 값이 들어가서 출력
+    print("{}, 커피가 준비되었습니다.".format(customer))
+
+#-----------------------------------------------------------
+
+## while
+# 조건을 만족할때까지 반복
+customer = "토르"
+index = 5    # 5번 확인
+while index >= 1:
+    print("{}, 커피가 준비되었습니다. {}번 남았어요.".format(customer, index))
+    index -= 1
+    if index == 0:
+        print("커피는 폐기처분되었습니다.")
+
+# 토르, 커피가 준비되었습니다. 5번 남았어요.
+# 토르, 커피가 준비되었습니다. 4번 남았어요.
+# 토르, 커피가 준비되었습니다. 3번 남았어요.
+# 토르, 커피가 준비되었습니다. 2번 남았어요.
+# 토르, 커피가 준비되었습니다. 1번 남았어요.
+# 커피는 폐기처분되었습니다.
+
+customer = "아이언맨"
+index = 1
+while True:    # True로 인해 무한반복
+    print("{}, 커피가 준비되었습니다. 호출 {}회".format(customer, index))
+    index += 1
+# 계속 값이 나옴 => 무한루프 (프로그램 강제종료는 Ctrl + C)
+
+customer = "학남"
+person = "Unknown"
+
+while person != customer:
+    print("{}, 커피가 준비 되었습니다.".format(customer))
+    person = input("이름이 어떻게 되세요? ")    # input에서 답한 값이 person에 들어감
+                                               # "학남"이 입력되야 while문 탈출
+
+#-----------------------------------------------------------
+
+## continue 와 break
+
+absent = [2, 5]    # 출석번호 2번, 5번 결석
+for student in range(1, 11):    # 출석번호 1부터 10번까지 
+    if student in absent:
+        continue    # 밑 문장을 실행하지 않고  다음 반복으로 진행 (여기서는 2, 5번 스킵하고 다음 숫자로 넘어감)
+    print("{}, 책을 읽어봐".format(student))
+# 1, 책을 읽어봐
+# 3, 책을 읽어봐
+# 4, 책을 읽어봐
+# 6, 책을 읽어봐
+# 7, 책을 읽어봐
+# 8, 책을 읽어봐
+# 9, 책을 읽어봐
+# 10, 책을 읽어봐
+
+absent = [2, 5] 
+no_book = [7]    # 책을 깜빡했음
+for student in range(1, 11):    
+    if student in absent:
+        continue
+    elif student in no_book:
+        print("오늘 수업 여기까지. {}는 교무실로 따라와.".format(student)) 
+        break    # 뒤에 반복값이 더 있을지라도 바로 반복문 탈출
+    print("{}, 책을 읽어봐".format(student))
+# 1, 책을 읽어봐
+# 3, 책을 읽어봐
+# 4, 책을 읽어봐
+# 6, 책을 읽어봐
+# 오늘 수업 여기까지. 7는 교무실로 따라와. 
+
+#-----------------------------------------------------------
+
+## 한 줄 for
+
+#출석번호가 1, 2, 3, 4, 앞에 100을 붙이기로 함 -> 101, 102, 103, 104.
+student = [1, 2, 3, 4, 5]
+print(student)
+student = [i + 100 for i in student]    # student 리스트에 있는 i값을 하나씩 불러오면서 거기에 100을 더한 값을 리스트로 바꿔서 위 print에 집어 넣는다.
+print(student)
+# [101, 102, 103, 104, 105]
+
+# 학생 이름을 글자수에 따른 길이로 변환
+students = ["Iron man", "Thor", "groot"]
+students = [len(i) for i in students]    # len는 문자열 or 값의 길이
+print(students)
+# [8, 4, 5]
+
+# 학생 이름을 대문자로 변환
+students = ["Iron man", "Thor", "groot"]
+students = [i. upper() for i in students]    # upper는 대문자 변환
+print(students)
+# ['IRON MAN', 'THOR', 'GROOT']
+
+#-----------------------------------------------------------
+
+from random import *
+count = 0    # 총 탑승 승객
+for i in range(1, 51):    # 1 ~ 50 이라는 수 (승객)
+    time = randrange(5, 51)    # 5 ~ 50분 소요 시간 
+    if 5 <= time <= 15:     # 5 ~ 15분 이내 손님 (매칭 성공), 탑승 승객 수 증가 처리
+        print("[O] {}번째 손님 (소요시간 : {}분)".format(i, time))
+        count += 1
+    else:    # 매칭 실패한 경우
+         print("[] {}번째 손님 (소요시간 : {}분)".format(i, time))
+
+print("총 탑승 승객 : {}분".format(count))
