@@ -157,6 +157,7 @@ while(True):
 # 같은 폴더 경로에 있음
 
 import theater_module
+from travel import thailand
 theater_module.price(3) # 3명이 영화 보러 갔을 때 가격
 # 3명 가격은 30000원 입니다.
 theater_module.price_morning(4) # 4명이서 조조 할인 영화 보러 갔을 때 가격
@@ -188,5 +189,116 @@ price(5)
 
 #-----------------------------------------------------------
 
-## 패키지
-# 
+## 패키지 : module들을 모아놓은 집합
+
+# travel 폴더와 하위파일 3개를 만듬
+import travel.thailand     # 주의할 점 : 맨 뒤 thailand 처럼 모듈이나 패키지만 가능, class나 함수는 바로 import 불가능
+trip_to = travel.thailand.ThailandPackage()
+trip_to.detail()
+# [태국 패키지 3박 5일] 방콕, 파타야 여행
+#  (야시장 투어) 50만원
+
+from travel.thailand import ThailandPackage    # travel 패키지 안의 thailand 모듈에서 ThailandPackage라는 class를 import
+trip_to = ThailandPackage()
+trip_to.detail()
+# [태국 패키지 3박 5일] 방콕, 파타야 여행 (야시장 투어) 50만원
+
+from travel import vietnam
+trip_to = vietnam.VietnamPackage()
+trip_to.detail()
+# [베트남 패키지 3박 5일] 다낭 효도 여행 60만원
+
+#-----------------------------------------------------------
+
+## __all__
+
+from travel import *    # travel 패키지 안에 import가 되는 공개범위를 설정해줘야함. => __init__.py 에서 지정
+trip_to = vietnam.VietnamPackage()
+trip_to.detail()
+# [베트남 패키지 3박 5일] 다낭 효도 여행 60만원
+
+trip_to = thailand.ThailandPackage()
+trip_to.detail()                         # __init__.py 에서 __all__ = ["thailand"] 해야 import 가능
+# [태국 패키지 3박 5일] 방콕, 파타야 여행 (야시장 투어) 50만원
+
+#-----------------------------------------------------------
+
+## 모듈 직접 실행 (모듈 테스트를 위해)
+
+# thailand.py로!
+# 그 후
+
+from travel import *
+trip_to = thailand.ThailandPackage()
+trip_to.detail()   
+# Thailand 외부에서 모듈 호출
+# [태국 패키지 3박 5일] 방콕, 파타야 여행 (야시장 투어) 50만원
+
+#-----------------------------------------------------------
+
+## 패키지, 모듈 위치
+
+import inspect
+import random
+print(inspect.getfile(random))    # random.py 파일을 찾는 것
+# C:\Python310\lib\random.py
+
+print(inspect.getfile(thailand))
+# c:\Users\hakna\Desktop\Python_Workspace\파이썬연습_코드잇\TIL\travel\thailand.py
+
+#-----------------------------------------------------------
+
+## pip install : 패키지 설치
+
+# 구글에 pypi 검색, 기존에 있는 여러 패키지를 이용 가능
+# Terminal에 "pip install beautifulsoup4" 를 복붙
+from bs4 import BeautifulSoup
+soup = BeautifulSoup("<p>Some<b>bad<i>HTML")
+print(soup.prettify())
+
+# Terminal에 "pip list" 입력하면 설치되어있는 패키지 내용 확인 
+# Terminal에 "pip show 패키지명" 입력하면 자세한 정보 확인
+# 만약 쓰고 있는 패키지에 업데이트가 필요하면 => Terminal에 pip install --upgrade 패키지명 입력!
+# 패키지 삭제 => Terminal에 pip uninstall 패키지명
+
+#-----------------------------------------------------------
+
+## 내장함수 : 따로 import 필요 없이 바로 사용 가능한 함수
+
+# input : 사용자 입력을 받는 함수
+ 
+# dir : 어떤 객체를 넘겨줬을 때 그 객체가 어떤 변수와 함수를 가지고 있는지 표시
+import random # 외장 함수
+print(dir(random)) # random 모듈내에서 쓸 수 있는 함수 표시
+
+lst = [1, 2, 3]
+print(dir(lst))  # lst 모듈에서 쓸 수 있는 함수들 표시
+
+# 혹은 구글에 list of python builtins 라고 검색하면 내장 함수 정보 등 확인 가능
+
+#-----------------------------------------------------------
+
+## 외장함수 : 직접 import를 해서 사용해야 하는 함수
+
+# 구글에 list of python modules 를 검색하면 외장함수 목록 확인 가능
+
+# glob : 경로 내의 폴더 / 파일 목록 조회 (윈도우 dir)
+import glob
+print(glob.glob(*.py))    # 확장자가 py 인 모든 파일
+
+# os : 운영체제에서 제공하는 기본 기능
+import os
+print(os.getcwd()) # 현재 directory
+
+#-----------------------------------------------------------
+
+## Quiz) 프로젝트 내에 나만의 시그니처를 남기는 모듈을 만드시오
+# 조건 : 모듈 파일명은 byme.py 로 작성
+# (모듈 사용 예제)
+# import byme
+# byme.sign()
+
+# (출력 예제)
+# 이 프로그램은 나도코딩에 의해 만들어졌습니다.
+# 유튜브 : http://youtube.com
+# 이메일 : nadocoding@gmail.com
