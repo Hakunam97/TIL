@@ -1,0 +1,65 @@
+## 사전 (dictionary)
+# key-value pair (키-값 쌍)
+
+my_dictionary = {
+    5: 25,  # key = 5, value = 25
+    2: 4,   # key = 2, value = 4
+    3: 9    # key = 3, value = 9
+}
+print(type(my_dictionary))  # <class 'dict'>
+
+# 사전에 저장된 값 불러오기
+print(my_dictionary[3]) # 9
+
+# 사전에 새로운 pair 추가
+my_dictionary[9] = 81
+print(my_dictionary)    # {5: 25, 2: 4, 3: 9, 9: 81} / 9: 81 이 추가됨
+
+# 사전의 key는 정수형일 필요가 없다. str도 가능
+
+#------------------------------------------------------------------------------------------
+
+## 사전 활용 TIP
+
+my_family = {
+    '엄마': '김자옥',
+    '아빠': '이석진',
+    '아들': '이동민',
+    '딸': '이지영'
+}
+
+# 사전에 어떤 값들이 있는지 목록이 필요할 때
+print(my_family.values())   # dict_values(['김자옥', '이석진', '이동민', '이지영'])
+
+print('이지영' in my_family.values())   # True
+print('성태호' in my_family.values())   # False
+
+# for문을 돌리고 싶으면
+for value in my_family.values():
+    print(value)
+# 김자옥
+# 이석진
+# 이동민
+# 이지영
+
+# value 대신 key 목록을 받고 싶으면
+print(my_family.keys()) # dict_keys(['엄마', '아빠', '아들', '딸'])
+
+for key in my_family.keys():
+    print(key)
+# 엄마
+# 아빠
+# 아들
+# 딸
+
+for key in my_family.keys():
+    value = my_family[key]
+    print(key, value)   # 모든 쌍 받기 가능
+# 엄마 김자옥
+# 아빠 이석진
+# 아들 이동민
+# 딸 이지영
+
+# 위를 한 단계로 줄일 수 있음 (items)
+for key, value in my_family.items():    # key와 value를 동시에 받아옴
+    print(key, value)
