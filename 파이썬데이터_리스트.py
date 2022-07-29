@@ -1,4 +1,157 @@
-# 리스트  (list)
-number = [2, 3, 5, 7, 11, 13]
+## 리스트  (list)
+import numbers
+
+
+numbers = [2, 3, 5, 7, 11, 13]
 names = ["윤수", "혜린", "태호", "영훈"]
 
+## 인덱싱 (indexing)
+print(names[1]) # 혜린
+
+print(numbers[1] + numbers[3])  # 3+7 = 10
+
+num_1 = numbers[1]
+num_3 = numbers[3]
+print(num_1 + num_3)    # 10
+
+print(numbers[-1])  # 13
+print(numbers[-3])  # 7
+
+#------------------------------------------------------------------------------------------
+
+## 리스트 슬라이싱 (list slicing)
+numbers[0:4]    # index 0 ~ index 3 까지 자름
+print(numbers[0:4]) # [2, 3, 5, 7]
+print(numbers[2:])  # [5, 7, 11, 13]
+print(numbers[:3])  # [2, 3, 5]
+
+new_list = numbers[:3]  # [2, 3, 5]
+print(new_list[2])  # 5
+
+numbers[0] = 7
+print(numbers)  # [7, 3, 5, 7, 11, 13] 로 바뀜
+
+numbers[0] = numbers[0] + numbers[1]
+print(numbers) # [7, 3, 5, 7, 11, 13] 에서 [10, 3, 5, 7, 11, 13] 로 바뀜
+
+#------------------------------------------------------------------------------------------
+
+## 리스트에 사용할 수 있는 함수들
+
+nums = []
+print(len(nums))   # len은 길이를 나타냄, 0
+
+nums.append(5)  # append : 리스트에 값을 추가, 무조건 오른쪽!
+print(nums) # [5]
+nums.append(8)
+print(nums) # [5, 8], 새로운 값은 오른쪽 끝에 배정
+print(len(nums))    # 2
+
+nums.extend([1, 2, 3])  # extend : append를 반복해서 쓸 필요 없음
+print(nums) # [5, 8, 1, 2, 3]
+
+numbers = [2, 3, 5, 7, 11, 13, 17, 19]
+del numbers[3]  # del : numbers 리스트의 해당 인덱스를 삭제
+print(numbers)  # [2, 3, 5, 11, 13, 17, 19]
+
+numbers.insert(4, 37)   # insert : numbers 리스트의 4번 인덱스 자리에 37을 추가
+print(numbers)  # [2, 3, 5, 11, 37, 13, 17, 19]
+
+#------------------------------------------------------------------------------------------
+
+## 리스트 정렬 (2가지 함수)
+numbers = [19, 13, 2, 5, 3, 11, 7, 17]
+
+## sorted
+
+new_list = sorted(numbers)  # sorted 함수는 기존 numbers 리스트를 안 건들고 정렬된 새로운 리스트를 만듬
+print(new_list) # [2, 3, 5, 7, 11, 13, 17, 19]
+
+# 반대로 정렬하고 싶으면
+new_list = sorted(numbers, reverse=True)
+print(new_list) # [19, 17, 13, 11, 7, 5, 3, 2]
+
+## sort
+print(numbers.sort())   # None, sort는 아무것도 return 하지 않음. 기존 numbers 리스트 자체를 정렬
+
+# 그래서
+numbers.sort()
+print(numbers)  # [2, 3, 5, 7, 11, 13, 17, 19]
+
+# 반대 정렬하고 싶으면
+numbers.sort(reverse=True)
+print(numbers)  # [19, 17, 13, 11, 7, 5, 3, 2]
+
+#------------------------------------------------------------------------------------------
+
+## 리스트에서 값의 존재 확인하기
+
+# value가 some_list의 요소인지 확인
+def in_list(some_list, value):
+    i = 0
+    while i < len(some_list):
+        # some_list에서 value를 찾으면 True를 리턴
+        if some_list[i] == value:
+            return True
+        i += 1
+
+    # 만약 some_list에서 value를 발견하지 못했으면 False를 리턴
+    return False
+
+# 테스트
+primes = [2, 3, 5, 7, 11, 13, 17, 19 ,23]
+print(in_list(primes, 7))   # True
+print(in_list(primes, 12))  # False
+
+# 이미 파이썬에는 내장된 기능 => in 
+primes = [2, 3, 5, 7, 11, 13, 17, 19, 23]
+print(7 in primes)  # True
+print(12 in primes) # False
+
+# 거꾸로 값이 없는지 확인하려면 => in 앞에 not 붙이기
+primes = [2, 3, 5, 7, 11, 13, 17, 19, 23]
+print(7 not in primes)  # False
+print(12 not in primes) # True
+
+#------------------------------------------------------------------------------------------
+
+## 리스트 안의 리스트 (Nested List) => list[i][i]
+
+# 예를 들어 3번의 시험을 보는 수업
+grades = [[62, 75, 77], [78, 81, 86], [85, 91, 89]]
+
+print(grades[0])    # 첫 번째  학생의 성적  [62, 75, 77]
+print(grades[2])    # 세 번째 학생의 성적   [85, 91, 89]
+print(grades[0][0]) # 첫 번째 학생의 첫 번째 시험 성적  62
+print(grades[2][1]) # 세 번째 학생의 두 번째 시험 성적  91
+print((grades[0][0] + grades[1][0] + grades[2][0]) / 3) # 첫 번째 시험의 평균   75.0
+
+#------------------------------------------------------------------------------------------
+
+## sort 메소드 : some_list.sort() 는 새로운 리스트 생성X, some_list를 정렬된 상태로 바꾼다.
+
+numbers = [5, 3, 7, 1]
+numbers.sort()
+print(numbers)  # [1, 3, 5, 7]
+
+#------------------------------------------------------------------------------------------
+
+## reverse 메소드 : list의 원소들을 뒤집어진 순서로 배치
+
+numbers = [5, 3, 7, 1]
+numbers.reverse()
+print(numbers)  # [1, 7, 3, 5]
+
+#------------------------------------------------------------------------------------------
+
+## index 메소드 : some_list.index(x) 는 some_list에서 x의 값을 갖고 있는 원소의 인덱스를 리턴
+members = ["영훈", "윤수", "태호", "혜린"]
+print(members.index("윤수"))    # 1  (index 값을 나타냄)
+print(members.index("태호"))    # 2
+
+#------------------------------------------------------------------------------------------
+
+## remove 메소드 : some_list.remove(x) 는 some_list에서 첫 번째로 x값을 갖고 있는 원소 삭제
+fruits = ["딸기", "당근", "파인애플", "수박", "참외"]
+fruits.remove("파인애플")
+print(fruits)   # ['딸기', '당근', '수박', '참외']
