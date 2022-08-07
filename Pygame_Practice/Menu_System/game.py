@@ -1,18 +1,22 @@
 import pygame
-from menu import MainMenu
+from menu import *
+
 
 class Game():
     def __init__(self):
         pygame.init()
         self.running, self.playing = True, False    # 2가지 Loop
         self.UP_KEY, self.DOWN_KEY, self.START_KEY, self.BACK_KEY = False, False, False, False  # player가 눌렀을 때 True로
-        self.DISPLAY_W, self.DISPLAY_H = 480, 270   # width, height (canvas size)
+        self.DISPLAY_W, self.DISPLAY_H = 800, 600   # width, height (canvas size)
         self.display = pygame.Surface((self.DISPLAY_W, self.DISPLAY_H))
         self.window = pygame.display.set_mode(((self.DISPLAY_W, self.DISPLAY_H)))
-        self.font_name = '8-BIT WONDER.TTF' 
-        # self.font_name = pygame.font.get_default_font()
+        self.font_name = 'DungGeunMo.ttf' 
+        #self.font_name = pygame.font.get_default_font()
         self.BLACK, self.WHITE = (0, 0, 0), (255, 255, 255)
-        self.curr_menu = MainMenu(self)
+        self.main_menu = MainMenu(self)
+        self.options = OptionsMenu(self)
+        self.credits = CreditsMenu(self)
+        self.curr_menu = self.main_menu
 
     def game_loop(self):
         while self.playing: # Loop
@@ -20,7 +24,7 @@ class Game():
             if self.START_KEY:
                 self.playing = False
             self.display.fill(self.BLACK)
-            self.draw_text('Thanks for Playing', 20, self.DISPLAY_W / 2, self.DISPLAY_H / 2)    # 화면 센터에 표시, def지정 함수
+            self.draw_text('Thanks for Playing', 40, self.DISPLAY_W / 2, self.DISPLAY_H / 2)    # 화면 센터에 표시, def지정 함수
             self.window.blit(self.display, (0, 0))
             pygame.display.update()
             self.reset_keys()   # 다시 모든key False로, def지정 함수
