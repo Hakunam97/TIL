@@ -30,7 +30,7 @@ class MainMenu(Menu): # (inherit)
         while self.run_display:
             self.game.check_events()
             self.check_input()
-            self.game.display.fill(self.game.BLACK)
+            self.game.display.fill(self.game.BLUE)
             self.game.draw_text("Main Menu", 60, self.game.DISPLAY_W / 2, self.game.DISPLAY_H / 2 - 60) # 약간 위로
             self.game.draw_text("Start Game", 30, self.startx, self.starty)
             self.game.draw_text("Options", 30, self.optionsx, self.optionsy)
@@ -85,7 +85,7 @@ class OptionsMenu(Menu):
         while self.run_display:
             self.game.check_events()
             self.check_input()
-            self.game.display.fill((0, 0, 0))
+            self.game.display.fill((0, 0, 255))
             self.game.draw_text('Options', 60, self.game.DISPLAY_W / 2, self.game.DISPLAY_H / 2 - 30)
             self.game.draw_text('Volume', 30, self.volx, self.voly)
             self.game.draw_text('Controls', 30, self.controlsx, self.controlsy)
@@ -120,7 +120,7 @@ class CreditsMenu(Menu):
             if self.game.START_KEY or self.game.BACK_KEY:
                 self.game.curr_menu = self.game.main_menu
                 self.run_display = False
-            self.game.display.fill(self.game.BLACK)
+            self.game.display.fill(self.game.BLUE)
             self.game.draw_text('Credits', 60, self.game.DISPLAY_W / 2, self.game.DISPLAY_H / 2 - 20)
             self.game.draw_text('Made by me', 30, self.game.DISPLAY_W / 2, self.game.DISPLAY_H / 2 + 70)
             self.blit_screen()

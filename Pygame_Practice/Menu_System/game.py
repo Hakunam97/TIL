@@ -12,7 +12,7 @@ class Game():
         self.window = pygame.display.set_mode(((self.DISPLAY_W, self.DISPLAY_H)))
         # self.font_name = 'DungGeunMo.ttf'
         #self.font_name = pygame.font.get_default_font()
-        self.BLACK, self.WHITE = (0, 0, 0), (255, 255, 255)
+        self.BLACK, self.WHITE, self.BLUE = (0, 0, 0), (255, 255, 255), (0, 0, 255)
         self.main_menu = MainMenu(self)
         self.options = OptionsMenu(self)
         self.credits = CreditsMenu(self)
@@ -23,7 +23,7 @@ class Game():
             self.check_events() # event 확인, 아래 def로 지정한 함수
             if self.START_KEY:
                 self.playing = False
-            self.display.fill(self.BLACK)
+            self.display.fill(self.BLUE)
             self.draw_text('Thanks for Playing', 40, self.DISPLAY_W / 2, self.DISPLAY_H / 2)    # 화면 센터에 표시, def지정 함수
             self.window.blit(self.display, (0, 0))
             pygame.display.update()
@@ -54,7 +54,7 @@ class Game():
         self.UP_KEY, self.DOWN_KEY, self.START_KEY, self.BACK_KEY = False, False, False, False
 
     def draw_text(self, text, size, x, y):
-        font = pygame.font.Font('C:\\Users\\hakna\\OneDrive\\바탕 화면\\TIL\\Pygame_Practice\\Menu_System\\8BITWONDER.TTF', size)
+        font = pygame.font.Font('C:\\Users\\hakna\\Desktop\\TIL\\Pygame_Practice\\Menu_System\\8BITWONDER.TTF', size)
         text_surface = font.render(text, True, self.WHITE)  # 글자 나타내기
         text_rect = text_surface.get_rect() # 사각형틀 잡기
         text_rect.center = (x, y)
