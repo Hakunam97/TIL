@@ -6,7 +6,7 @@ class Menu():
         self.mid_w, self.mid_h = self.game.DISPLAY_W / 2, self.game.DISPLAY_H / 2   # 화면 중간
         self.run_display = True
         self.cursor_rect = pygame.Rect(0, 0, 20, 20)    # (x, y) = (0, 0) 그리고 size는 20x20
-        self.offset = - 100 # 커서가 글자 위로 가는걸 원하지 않음, to the x position
+        self.offset = - 170 # 커서가 글자 위로 가는걸 원하지 않음, to the x position
 
     def draw_cursor(self):
         self.game.draw_text('*', 25, self.cursor_rect.x, self.cursor_rect.y)   # game.py의 def지정 함수, reference로서 사용
@@ -106,6 +106,8 @@ class OptionsMenu(Menu):
         elif self.game.START_KEY:
             # TO-DO: Create a Volume Menu and a Controls Menu
             pass
+            # Controls Menu
+            
 
 class CreditsMenu(Menu):
     def __init__(self, game):

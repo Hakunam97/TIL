@@ -10,8 +10,8 @@ class Game():
         self.DISPLAY_W, self.DISPLAY_H = 800, 600   # width, height (canvas size)
         self.display = pygame.Surface((self.DISPLAY_W, self.DISPLAY_H))
         self.window = pygame.display.set_mode(((self.DISPLAY_W, self.DISPLAY_H)))
-        #self.font_name = 'DungGeunMo.ttf' 
-        self.font_name = pygame.font.get_default_font()
+        # self.font_name = 'DungGeunMo.ttf'
+        #self.font_name = pygame.font.get_default_font()
         self.BLACK, self.WHITE = (0, 0, 0), (255, 255, 255)
         self.main_menu = MainMenu(self)
         self.options = OptionsMenu(self)
@@ -54,10 +54,13 @@ class Game():
         self.UP_KEY, self.DOWN_KEY, self.START_KEY, self.BACK_KEY = False, False, False, False
 
     def draw_text(self, text, size, x, y):
-        font = pygame.font.Font(self.font_name,size)
+        font = pygame.font.Font('C:\\Users\\hakna\\OneDrive\\바탕 화면\\TIL\\Pygame_Practice\\Menu_System\\8BITWONDER.TTF', size)
         text_surface = font.render(text, True, self.WHITE)  # 글자 나타내기
         text_rect = text_surface.get_rect() # 사각형틀 잡기
         text_rect.center = (x, y)
         self.display.blit(text_surface, text_rect)
+
+    # Game Start 누르면 화면 전환
+    
 
     
