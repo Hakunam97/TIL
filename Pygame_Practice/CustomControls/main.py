@@ -1,4 +1,4 @@
-mport pygame
+import pygame
 from util import load_save, reset_keys
 from controls import Controls_Handler
 
