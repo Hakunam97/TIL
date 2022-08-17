@@ -1,6 +1,115 @@
 class User:  # 첫글자는 항상 대문자 !!
     pass
 
-user1 = User()  # User 인스턴스 3개, but 서로 다른 존재
+user1 = User()  # User 인스턴스 but 서로 다른 존재
+user2 = User()  # User 인스턴스
+user3 = User()  # User 인스턴스
+
+## 인스턴스에 속성 추가 (인스턴스 변수)
+user1.name = "김학남"   # 인스턴스 변수 정의 : 인스턴스이름.속성이름(인스턴스 변수) = "속성에 넣을 값"
+user1.email = "captain@codeit.kr"
+user1.password = "12345"
+
+user2.name = "강영훈"  
+user2.email = "younghoon@codeit.kr"
+user2.password = "98765"
+
+user3.name = "최지웅"  
+user3.email = "jiwoong@codeit.kr"
+user3.password = "78353"
+
+## 인스턴스 변수 사용 : 인스턴스 이름. 인스턴스 변수 이름
+print(user1.email)  # captain@codeit.kr
+print(user2.password)   # 98765
+
+#------------------------------------------------------------------------------------------
+
+## 인스턴스 메소드
+class User:
+    def say_hello(some_user):   # <- 인스턴스 메소드
+        # 인사 메세지 출력 메소드
+        print("안녕하세요! 저는 {}입니다!".format(some_user.name))  # some_user에 user1, user2, user3를 넣음
+
+    def login(some_user, my_email, my_password):
+        # 로그인 메소드
+        if (some_user.email == my_email and some_user.password == my_password):
+            print("로그인 성공, 환영합니다")
+        else:
+            print("로그인 실패, 없는 아이디이거나 잘못된 비밀번호입니다.")
+
+User.say_hello(user1)   # 안녕하세요! 저는 김학남입니다!
+User.say_hello(user2)   # 안녕하세요! 저는 강영훈입니다!
+User.say_hello(user3)   # 안녕하세요! 저는 최지웅입니다!
+
+# 또 다른 방법 : 인스턴스 이름.메소드 이름()
+# user1.say_hello()
+
+user1 = User()
+
+user1.name = "김대위"
+user1.email = "captain@gmail.com"
+user1.password = "12345"
+
+# user1.login(user1, "captain@gmail.com", "12345") <- 틀린 방법
+user1.login("captain@gmail.com", "12345")   # user1이 login 메소드의 첫 번째 파라미터로 자동 전달!
+
+#------------------------------------------------------------------------------------------
+
+## self
+# 파이썬에서 인스턴스 메소드의 첫 번째 파라미터를 self 권장!!!
+
+class User:
+    def say_hello(self):   
+        # 인사 메세지 출력 메소드
+        print("안녕하세요! 저는 {}입니다!".format(self.name))  # some_user에 user1, user2, user3를 넣음
+
+    def login(self, my_email, my_password):
+        # 로그인 메소드
+        if (self.email == my_email and self.password == my_password):
+            print("로그인 성공, 환영합니다")
+        else:
+            print("로그인 실패, 없는 아이디이거나 잘못된 비밀번호입니다.")
+
+#------------------------------------------------------------------------------------------
+
+## 인스턴스 변수와 같은 이름을 갖는 파라미터
+class User:
+    def say_hello(self):
+        print("안녕하세요! 저는 {}입니다!".format(self.name))
+
+    def check_name(self, name):
+        # 파라미터로 받는 name이 유저의 이름과 같은지 불린으로 리턴하는 메소드
+        return self.name == name
+
+user1 = User()
 user2 = User()
-user3 = User()
+
+user1.name = "김대위"
+user1.email = "captain@gmail.com"
+user1.password = "12345"
+
+user2.name = "강영훈"  
+user2.email = "younghoon@codeit.kr"
+user2.password = "98765"
+
+print(user1.check_name("김대위"))   # True, check_name(self, name) 에서 self에 user1, name에 "김대위"가 자동으로 들어감
+print(user1.check_name("강영훈"))   # False, user1.name과 다르기 때문에
+
+#------------------------------------------------------------------------------------------
+
+## __init__ 메소드 : 인스턴스가 생성될 때 자동으로 호출!
+# 인스턴스 변수의 초기값 설정
+
+class User:
+    def __init__(self, name, email, password):  # 이름 앞 뒤로 _ 두개씩 : magic method(특수)
+        self.name = name
+        self.email = email
+        self.password = password
+
+user1 = User("Young", "young@codeit.kr", "123456")
+# 1. User 인스턴스 생성
+# 2. __init__ 메소드 자동 호출
+# user1 = User()
+# user1.initialize("Young", "young@codeit.kr", "123456")    (두줄로 표현안해도 됨)
+
+print(user1.email)  # young@codeit.kr
