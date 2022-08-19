@@ -1,0 +1,117 @@
+## Python은 순수 객체 지향 언어 (Python의 모든 것이 객체)
+# -> Python에 있는 모든 것들은 특정 class의 Instance로 생성. Python코드를 조금이라도 쓰면 객체 생성, 객체지향 프로그래밍을 자동으로 실시.
+
+#------------------------------------------------------------------------------------------
+
+## 가변 vs 불변 타입
+
+# 가변 타입 객체 - 한번 생성한 인스턴스의 속성 변경 가능 ex) list class
+# 불변 타입 객체 - " 속성 변경 불가 ex) tuple class
+
+mutable_object = [1, 2, 3]
+immutable_object = (1, 2, 3)
+
+mutable_object[0] = 4
+print(mutable_object)   # [4, 2, 3]
+# 이렇게 list instance는 생성되고 나서도 그 속성을 바꿀 수 있음
+
+immutable_object[0] = 4
+# print(immutable_object)   # TypeError, 이미 생성된 객체의 속성 변경 불가 (불변 타입)
+
+# 그러나 변수가 가리키는 객체 자체는 바꿀 수 있음
+tuple_x = (6, 4)
+tuple_x = (4, 1)
+tuple_x = (4, 1, 7)
+
+print(tuple_x)  # (4, 1, 7), 아예 새로운 tuple instance를 생성하고 변수가 이를 가리키게 하면 됨
+
+# 그러나 가변 타입은
+list_x = []
+
+list_x.append(4)
+list_x.append(1)
+list_x.append(7)
+
+print(list_x)   # (4, 1, 7), 이미 생성된 객체의 속성을 바꿀 수 있음 (가변 타입)
+
+# 가변(mutable_type) - list, dict, 직접 작성하는 class
+# 불변 (immutable_type) - bool, int, float, str, tuple
+
+#------------------------------------------------------------------------------------------
+
+## 유용한 함수들
+
+
+# 1. max, min 함수
+print(max(2, 5))             # => 5, 파라미터 중 가장 큰 값 리턴
+print(max(2, 7, 5))          # => 7
+print(min(2, 5))             # => 2, 파라미터 중 가장 작은 값 리턴
+print(min(2, 7, 5, 11, 6))   # => 2
+
+
+# 2. sum 함수
+# : 리스트, 튜플, 딕셔너리에 있는 숫자형 요소들의 합을 리턴
+int_list = [1, 2, 3, 4, 5]
+int_tuple = (4, 3, 6, 1, 2)
+int_dict = {1: "one", 2: "two", 3: "three"}
+    
+print(sum(int_list))         # => 15
+print(sum(int_tuple))        # => 16
+print(sum(int_dict))         # => 6
+
+
+# 3. ternary expression
+# : 불린(Boolean) 값에 따라 다른 값을 리턴
+condition = True
+    
+if condition:
+    condition_string = "nice"
+else:
+    condition_string = "not nice"
+    
+print(condition_string)      # => nice
+
+# 위 코드를 더 짧게 표현 가능 (아래처럼)
+condition = True
+    
+condition_string = "nice" if condition else "not nice"
+    
+print(condition_string)      # => nice
+
+
+# 4. list comprehension
+# : 새로운 리스트를 만드는 간편한 방법. 특정 리스트나 튜플을 바탕으로 리스트를 생성할 때
+int_list = [1, 2, 3, 4, 5, 6]
+squares = []
+    
+for x in int_list:
+    squares.append(x**2)
+    
+print(squares)               # => [1, 4, 9, 16, 25, 36]
+
+# 보다는 list comprehension 방법을 사용하면
+int_list = [1, 2, 3, 4, 5, 6]
+squares = [x**2 for x in int_list]
+    
+print(squares)               # => [1, 4, 9, 16, 25, 36]
+
+
+# 5. zfill 메소드
+# : 문자열을 최소 몇 자리 이상을 가진 문자열로 변환
+# : 만약 모자란 부분은 왼쪽에 “0”을 채워줌
+# : 설정된 자릿수보다 이미 더 긴 문자열이라면 그 문자열을 그대로 출력
+print("1".zfill(6))     # => 000001
+print("333".zfill(2))   # => 333
+print("a".zfill(8))     # => 0000000a
+print("ab".zfill(8))    # => 000000ab
+print("abc".zfill(8))   # => 00000abc
+
+# !만약 0 대신 다른 문자 or 숫자를 넣고 싶으면 => rjust, ljust
+test1 = "12345".rjust(10, "k")  # 오른쪽 정렬
+print(test1)    # => kkkkk12345
+
+test2 = "12345".ljust(10, "k")  # 왼쪽 정렬
+print(test2)    # => 12345kkkkk
+
+#------------------------------------------------------------------------------------------
+
