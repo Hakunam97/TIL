@@ -137,15 +137,22 @@ class BlogUser:
         블로그 유저는 속성으로 이름, 게시글들을 갖는다
         posts는 빈 배열로 초기화한다
         """
+        self.name = name
+        self.posts = []
 
     def add_post(self, date, content):
         # 새로운 게시글 추가
+        new_post = Post(date, content)
+        self.posts.append(new_post)
 
     def show_all_posts(self):
         # 블로그 유저의 모든 게시글 출력
+        for post in self.posts:
+            print(post) # return "작성 날짜: {}\n내용: {}".format(self.date, self.content) 이 부분이 출력
 
     def __str__(self):
         # 간단한 인사와 이름을 문자열로 리턴
+        return "안녕하세요 {}입니다.\n".format(self.name)
     
     
 
