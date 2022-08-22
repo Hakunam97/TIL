@@ -8,6 +8,7 @@ print(burger_price * 2)
 print(burger_price + fries_price)
 print(burger_price * 3 + fries_price * 2 + drink_price * 5) ;
 
+
 # 함수
 def hello():                         # def는 함수정의
     print("""
