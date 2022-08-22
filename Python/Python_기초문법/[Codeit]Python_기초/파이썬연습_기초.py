@@ -1,5 +1,5 @@
 # 변수
-'''burger_price = 4750
+burger_price = 4750
 fries_price = 1490
 drink_price = 1250
 
@@ -7,7 +7,7 @@ print(burger_price)
 print(burger_price * 2)
 print(burger_price + fries_price)
 print(burger_price * 3 + fries_price * 2 + drink_price * 5) ;
-'''
+
 
 # 함수
 def hello():                         # def는 함수정의
