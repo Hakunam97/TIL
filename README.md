@@ -18,7 +18,7 @@ Writing rules
 Categories
 ----------
 ### Python
-* Basic functions
+* **Basic functions**
   - [01.파이썬기초_기초.md](https://github.com/Hakunam97/TIL/blob/master/Python/Python_Basic/%5BCodeit%5DPython_%EA%B8%B0%EC%B4%88/01.%ED%8C%8C%EC%9D%B4%EC%8D%AC%EA%B8%B0%EC%B4%88_%EA%B8%B0%EC%B4%88.md).
   - [02.파이썬기초_자료형.md](https://github.com/Hakunam97/TIL/blob/master/Python/Python_Basic/%5BCodeit%5DPython_%EA%B8%B0%EC%B4%88/02.%ED%8C%8C%EC%9D%B4%EC%8D%AC%EA%B8%B0%EC%B4%88_%EC%9E%90%EB%A3%8C%ED%98%95.md).
   - [03.파이썬기초_제어문.md](https://github.com/Hakunam97/TIL/blob/master/Python/Python_Basic/%5BCodeit%5DPython_%EA%B8%B0%EC%B4%88/03.%ED%8C%8C%EC%9D%B4%EC%8D%AC%EA%B8%B0%EC%B4%88_%EC%A0%9C%EC%96%B4%EB%AC%B8.md).
@@ -33,12 +33,12 @@ Categories
   - [12.파이썬기초_Aliasing.md](https://github.com/Hakunam97/TIL/blob/master/Python/Python_Basic/%5BCodeit%5DPython_%EB%8D%B0%EC%9D%B4%ED%84%B0/12.%ED%8C%8C%EC%9D%B4%EC%8D%AC%EA%B8%B0%EC%B4%88_Aliasing.md).
   - [13.파이썬기초_for반복문.md](https://github.com/Hakunam97/TIL/blob/master/Python/Python_Basic/%5BCodeit%5DPython_%EB%8D%B0%EC%9D%B4%ED%84%B0/13.%ED%8C%8C%EC%9D%B4%EC%8D%AC%EA%B8%B0%EC%B4%88_for%EB%B0%98%EB%B3%B5%EB%AC%B8.md).
   
-* Data Visualization
+* **Data Visualization**
   - [데이터시각화01.ipynb](https://github.com/Hakunam97/TIL/blob/master/Python/Python_Data_visualization/data/%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%8B%9C%EA%B0%81%ED%99%9401.ipynb).
   - [데이터시각화02.ipynb](https://github.com/Hakunam97/TIL/blob/master/Python/Python_Data_visualization/data/%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%8B%9C%EA%B0%81%ED%99%9402.ipynb).
   - [데이터시각화03.ipynb](https://github.com/Hakunam97/TIL/blob/master/Python/Python_Data_visualization/data/%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%8B%9C%EA%B0%81%ED%99%9403.ipynb).
 
-* Object oriented (객체지향)
+* **Object oriented (객체지향)**
   - [파이썬객체지향(1)_객체만들기.md](https://github.com/Hakunam97/TIL/blob/master/Python/%5BCodeit%5DPython_Object%20oriented/%ED%8C%8C%EC%9D%B4%EC%8D%AC%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5(1)_%EA%B0%9D%EC%B2%B4%EB%A7%8C%EB%93%A4%EA%B8%B0.md).
   - [파이썬객체지향(2)_객체만들기.md](https://github.com/Hakunam97/TIL/blob/master/Python/%5BCodeit%5DPython_Object%20oriented/%ED%8C%8C%EC%9D%B4%EC%8D%AC%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5(2)_%EA%B0%9D%EC%B2%B4%EB%A7%8C%EB%93%A4%EA%B8%B0.md).
   - [파이썬객체지향(3)_객체만들기.md](https://github.com/Hakunam97/TIL/blob/master/Python/%5BCodeit%5DPython_Object%20oriented/%ED%8C%8C%EC%9D%B4%EC%8D%AC%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5(3)_%EA%B0%9D%EC%B2%B4%EB%A7%8C%EB%93%A4%EA%B8%B0.md).
