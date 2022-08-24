@@ -19,7 +19,7 @@ Categories
 ----------
 ### Python
 * Basic functions
-  - 01.파이썬기초_기초.md
+  - [01.파이썬기초_기초.md](https://github.com/Hakunam97/TIL/blob/master/Python/Python_Basic/%5BCodeit%5DPython_%EA%B8%B0%EC%B4%88/01.%ED%8C%8C%EC%9D%B4%EC%8D%AC%EA%B8%B0%EC%B4%88_%EA%B8%B0%EC%B4%88.md).
   - 02.파이썬기초_자료형.md
   - 03.파이썬기초_제어문.md
   - 04.파이썬기초_추상화.md
