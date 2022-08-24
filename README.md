@@ -10,6 +10,7 @@ Today I learned
 Writing rules
 --------------
 * 폴더는 영문으로 작성
+* 문서 생성은 GFM (Github Flavored Markdown) 을 사용한다. (확장자 `.md`)
 * 해당 문서를 다시 봤을때, 추가적인 검색을 하지 않도록 최대한 자세히 기록한다.
 * 쉴 땐 확실히 쉬면서, 당일 할당량은 채우도록 노력하자
 * reference 명시
