@@ -13,7 +13,7 @@ Writing rules
 * 해당 문서를 다시 봤을때, 추가적인 검색을 하지 않도록 최대한 자세히 기록한다.
 * 쉴 땐 확실히 쉬면서, 당일 할당량은 채우도록 노력하자
 * reference 명시
-* [좋은 git commit message를 작성하기 위한 7가지 약속](https://meetup.toast.com/posts/106, "좋은 git 커밋 메시지를 작성하기 위한 7가지 약속")
+* [좋은 git commit message를 작성하기 위한 7가지 약속](https://meetup.toast.com/posts/106).
 
 Categories
 ----------
