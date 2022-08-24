@@ -17,4 +17,23 @@ Writing rules
 
 Categories
 ----------
-
+### Python
+* Basic functions
+  - 01.파이썬기초_기초.md
+  - 02.파이썬기초_자료형.md
+  - 03.파이썬기초_제어문.md
+  - 04.파이썬기초_추상화.md
+  - 05.파이썬기초_응용.md
+  - 06.파이썬기초_for,while,if.md
+  - 07.파이썬기초_함수,변수,입출력.md
+  - 08.파이썬기초_class문제.md
+  - 09.파이썬기초_error,module.md
+  - 10.파이썬기초_list.md
+  - 11.파이썬기초_dictionary.md
+  - 12.파이썬기초_Aliasing.md
+  - 13.파이썬기초_for반복문.md
+  
+* Data Visualization
+  - 데이터시각화01.ipynb
+  - 데이터시각화02.ipynb
+  - 데이터시각화03.ipynb
