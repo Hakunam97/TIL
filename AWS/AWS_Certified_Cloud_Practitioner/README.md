@@ -49,7 +49,7 @@ Level: Basic
 
     - 자료 퀄리티가 좋은 편
 
-    - 강의 파트별 내용 정리 
+    - **강의 파트별 내용 정리** 
         > (공부한 내용들을 하나의 md 파일에 정리)   
 
         - [01.AWS소개.md](https://github.com/Hakunam97/TIL/blob/master/AWS/AWS_Certified_Cloud_Practitioner/01.AWS%EC%86%8C%EA%B0%9C.md)
