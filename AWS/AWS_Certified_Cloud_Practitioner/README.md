@@ -69,4 +69,4 @@ Level: Basic
 - 시험이 끝나면 바로 결과 확인 가능하다.
 
 ## 5. 시험 결과
-<img src="https://ibb.co/TR4MXFD" width="550" height="350"/>
+<img src="https://github.com/Hakunam97/TIL/blob/master/AWS/images/CCP.PNG" width="70%" height="50%">
