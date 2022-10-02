@@ -49,6 +49,9 @@ Level: Basic
 
     - 자료 퀄리티가 좋은 편
 
+    - 강의 파트별 내용 정리
+        - 01.
+
     ### 2) 백서 및 자료
     - [Amazon Web Services 개요 - 한글 백서](https://d1.awsstatic.com/whitepapers/ko_KR/aws-overview.pdf)
 
@@ -70,3 +73,6 @@ Level: Basic
 
 ## 5. 시험 결과
 <img src="https://github.com/Hakunam97/TIL/blob/master/AWS/images/CCP.PNG" width="70%" height="50%">
+
+## 6. 마치며
+2주 정도면 충분히 합격 가능한 시험이다. 남들은 쉬운 시험이라고 생각해도 일단 합격하면 자존감이 올라간다. 50% Discount 바우쳐로 다음 시험 **SAA** 도전할 것이다!
