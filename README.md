@@ -61,3 +61,10 @@ Categories
   - [08.Cost, Support.md](https://github.com/Hakunam97/TIL/blob/master/AWS/AWS_Certified_Cloud_Practitioner/08.%EC%9A%94%EA%B8%88%2C%EC%A7%80%EC%9B%90.md)
   - [09.Migration.md](https://github.com/Hakunam97/TIL/blob/master/AWS/AWS_Certified_Cloud_Practitioner/09.%EB%A7%88%EC%9D%B4%EA%B7%B8%EB%A0%88%EC%9D%B4%EC%85%98%2C%ED%98%81%EC%8B%A0.md)
   - [10.Advantages, Framework.md](https://github.com/Hakunam97/TIL/blob/master/AWS/AWS_Certified_Cloud_Practitioner/10.%EC%9D%B4%EC%A0%90%2C%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC.md)
+
+## R
+- [01_변수,함수,패키지.md](https://github.com/Hakunam97/TIL/blob/master/R/01_%EB%B3%80%EC%88%98%2C%ED%95%A8%EC%88%98%2C%ED%8C%A8%ED%82%A4%EC%A7%80.md)
+- [02_데이터프레임,가공,정제.md](https://github.com/Hakunam97/TIL/blob/master/R/02_%EB%8D%B0%EC%9D%B4%ED%84%B0%ED%94%84%EB%A0%88%EC%9E%84%2C%EA%B0%80%EA%B3%B5%2C%EC%A0%95%EC%A0%9C.md)
+- [03.데이터파악,파생변수.md](https://github.com/Hakunam97/TIL/blob/master/R/03.%EB%8D%B0%EC%9D%B4%ED%84%B0%ED%8C%8C%EC%95%85%2C%ED%8C%8C%EC%83%9D%EB%B3%80%EC%88%98.md)
+- [04.데이터가공,정제.md](https://github.com/Hakunam97/TIL/blob/master/R/04.%EB%8D%B0%EC%9D%B4%ED%84%B0%EA%B0%80%EA%B3%B5%2C%EC%A0%95%EC%A0%9C.md)
+- [05.그래프.md](https://github.com/Hakunam97/TIL/blob/master/R/05.%EA%B7%B8%EB%9E%98%ED%94%84.md)
