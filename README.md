@@ -1,4 +1,4 @@
-Today I learned(TIL)
+📚Today I learned(TIL)
 =================
 
 * **오늘 배운, 알게 된, 학습한 내용을 정리해두는 저장소**
@@ -18,7 +18,7 @@ Writing rules
 
 Categories
 ----------
-## Python
+## 💻Python
 * **Basic functions**
   - [01.파이썬기초_기초.md](https://github.com/Hakunam97/TIL/blob/master/Python/Python_Basic/%5BCodeit%5DPython_%EA%B8%B0%EC%B4%88/01.%ED%8C%8C%EC%9D%B4%EC%8D%AC%EA%B8%B0%EC%B4%88_%EA%B8%B0%EC%B4%88.md).
   - [02.파이썬기초_자료형.md](https://github.com/Hakunam97/TIL/blob/master/Python/Python_Basic/%5BCodeit%5DPython_%EA%B8%B0%EC%B4%88/02.%ED%8C%8C%EC%9D%B4%EC%8D%AC%EA%B8%B0%EC%B4%88_%EC%9E%90%EB%A3%8C%ED%98%95.md).
@@ -48,7 +48,14 @@ Categories
   - [파이썬객체지향(6)_객체만들기연습.md](https://github.com/Hakunam97/TIL/blob/master/Python/%5BCodeit%5DPython_Object%20oriented/%ED%8C%8C%EC%9D%B4%EC%8D%AC%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5(6)_%EA%B0%9D%EC%B2%B4%EB%A7%8C%EB%93%A4%EA%B8%B0%EC%97%B0%EC%8A%B5.md).
   - [파이썬객체지향(7)_객체지향프로그래밍.md](https://github.com/Hakunam97/TIL/blob/master/Python/%5BCodeit%5DPython_Object%20oriented/%ED%8C%8C%EC%9D%B4%EC%8D%AC%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5(7)_%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D.md).
 
-## AWS
+## 💻R
+- [01_변수,함수,패키지.md](https://github.com/Hakunam97/TIL/blob/master/R/01_%EB%B3%80%EC%88%98%2C%ED%95%A8%EC%88%98%2C%ED%8C%A8%ED%82%A4%EC%A7%80.md)
+- [02_데이터프레임,가공,정제.md](https://github.com/Hakunam97/TIL/blob/master/R/02_%EB%8D%B0%EC%9D%B4%ED%84%B0%ED%94%84%EB%A0%88%EC%9E%84%2C%EA%B0%80%EA%B3%B5%2C%EC%A0%95%EC%A0%9C.md)
+- [03.데이터파악,파생변수.md](https://github.com/Hakunam97/TIL/blob/master/R/03.%EB%8D%B0%EC%9D%B4%ED%84%B0%ED%8C%8C%EC%95%85%2C%ED%8C%8C%EC%83%9D%EB%B3%80%EC%88%98.md)
+- [04.데이터가공,정제.md](https://github.com/Hakunam97/TIL/blob/master/R/04.%EB%8D%B0%EC%9D%B4%ED%84%B0%EA%B0%80%EA%B3%B5%2C%EC%A0%95%EC%A0%9C.md)
+- [05.그래프.md](https://github.com/Hakunam97/TIL/blob/master/R/05.%EA%B7%B8%EB%9E%98%ED%94%84.md)
+
+## 💻AWS
 - [AWS_Certified_Cloud_Practitioner 준비](https://github.com/Hakunam97/TIL/tree/master/AWS/AWS_Certified_Cloud_Practitioner)
 
   - [01.Introduction of AWS.md](https://github.com/Hakunam97/TIL/blob/master/AWS/AWS_Certified_Cloud_Practitioner/01.AWS%EC%86%8C%EA%B0%9C.md)
@@ -62,9 +69,4 @@ Categories
   - [09.Migration.md](https://github.com/Hakunam97/TIL/blob/master/AWS/AWS_Certified_Cloud_Practitioner/09.%EB%A7%88%EC%9D%B4%EA%B7%B8%EB%A0%88%EC%9D%B4%EC%85%98%2C%ED%98%81%EC%8B%A0.md)
   - [10.Advantages, Framework.md](https://github.com/Hakunam97/TIL/blob/master/AWS/AWS_Certified_Cloud_Practitioner/10.%EC%9D%B4%EC%A0%90%2C%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC.md)
 
-## R
-- [01_변수,함수,패키지.md](https://github.com/Hakunam97/TIL/blob/master/R/01_%EB%B3%80%EC%88%98%2C%ED%95%A8%EC%88%98%2C%ED%8C%A8%ED%82%A4%EC%A7%80.md)
-- [02_데이터프레임,가공,정제.md](https://github.com/Hakunam97/TIL/blob/master/R/02_%EB%8D%B0%EC%9D%B4%ED%84%B0%ED%94%84%EB%A0%88%EC%9E%84%2C%EA%B0%80%EA%B3%B5%2C%EC%A0%95%EC%A0%9C.md)
-- [03.데이터파악,파생변수.md](https://github.com/Hakunam97/TIL/blob/master/R/03.%EB%8D%B0%EC%9D%B4%ED%84%B0%ED%8C%8C%EC%95%85%2C%ED%8C%8C%EC%83%9D%EB%B3%80%EC%88%98.md)
-- [04.데이터가공,정제.md](https://github.com/Hakunam97/TIL/blob/master/R/04.%EB%8D%B0%EC%9D%B4%ED%84%B0%EA%B0%80%EA%B3%B5%2C%EC%A0%95%EC%A0%9C.md)
-- [05.그래프.md](https://github.com/Hakunam97/TIL/blob/master/R/05.%EA%B7%B8%EB%9E%98%ED%94%84.md)
+## 💻CS
