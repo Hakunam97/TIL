@@ -21,7 +21,8 @@ Categories
 * [Python](#💻python)
 * [R](#💻r)
 * [AWS](#💻aws)
-* [Computer Science](#💻cs)
+* [Computer Science](#💻computer-science)
+* [OS](#💻os)
 - - -
 ## 💻Python
 * **Basic functions**
@@ -74,4 +75,6 @@ Categories
   - [09.Migration.md](https://github.com/Hakunam97/TIL/blob/master/AWS/AWS_Certified_Cloud_Practitioner/09.%EB%A7%88%EC%9D%B4%EA%B7%B8%EB%A0%88%EC%9D%B4%EC%85%98%2C%ED%98%81%EC%8B%A0.md)
   - [10.Advantages, Framework.md](https://github.com/Hakunam97/TIL/blob/master/AWS/AWS_Certified_Cloud_Practitioner/10.%EC%9D%B4%EC%A0%90%2C%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC.md)
 
-## 💻CS
+## 💻Computer Science
+
+## 💻OS
