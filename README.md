@@ -18,11 +18,11 @@
 
 Categories
 ----------
-* [Python](#💻Python)
-* [R](#💻R)
-* [AWS](#💻AWS)
-* [Computer Science](#💻Computer-Science)
-* [OS](#💻OS)
+* [Python](#💻python)
+* [R](#💻r)
+* [AWS](#💻aws)
+* [Computer Science](#💻computer-science)
+* [OS](#💻os)
 - - -
 ## 💻Python
 * **Basic functions**
