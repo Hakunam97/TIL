@@ -77,5 +77,6 @@ Categories
 
 ## 💻Computer Science
 - [01. Bit,Binary.md](https://github.com/Hakunam97/TIL/blob/master/Computer%20Science/01_%EB%B9%84%ED%8A%B8%EC%99%80%EC%A7%84%EC%88%98.md)
+- [02. Computer Structure](https://github.com/Hakunam97/TIL/blob/master/Computer%20Science/02_%EC%BB%B4%ED%93%A8%ED%84%B0%EA%B5%AC%EC%A1%B0.md)
 
 ## 💻OS
