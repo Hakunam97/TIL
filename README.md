@@ -7,7 +7,7 @@
 * **조급해 하지 말고 멈추지도 말며 천천히 꾸준하게 한다.**
 ---
 
-Writing rules
+📌Writing rules
 --------------
 * 폴더는 **영문**으로 작성
 * 문서 생성은 **GFM** (Github Flavored Markdown) 을 사용한다. (확장자 `.md`)
@@ -18,6 +18,11 @@ Writing rules
 
 Categories
 ----------
+* [Python](#💻python)
+* [R](#💻r)
+* [AWS](#💻aws)
+* [Computer Science](#💻cs)
+- - -
 ## 💻Python
 * **Basic functions**
   - [01.파이썬기초_기초.md](https://github.com/Hakunam97/TIL/blob/master/Python/Python_Basic/%5BCodeit%5DPython_%EA%B8%B0%EC%B4%88/01.%ED%8C%8C%EC%9D%B4%EC%8D%AC%EA%B8%B0%EC%B4%88_%EA%B8%B0%EC%B4%88.md).
