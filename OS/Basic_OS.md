@@ -131,3 +131,5 @@ Page -> Paging
 ### Paging 파일
 > RAM처럼 사용하는 하드 디스크의 영역
 - HDD에서 RAM처럼 일부 용량을 RAM 영역을 끌고 옴
+
+<img src="https://github.com/Hakunam97/TIL/blob/master/OS/images/%EA%B0%80%EC%83%81%EB%A9%94%EB%AA%A8%EB%A6%AC.PNG" width="50%" height="30%" title="me" alt="me"></img>
