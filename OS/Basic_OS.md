@@ -132,4 +132,16 @@ Page -> Paging
 > RAM처럼 사용하는 하드 디스크의 영역
 - HDD에서 RAM처럼 일부 용량을 RAM 영역을 끌고 옴
 
-<img src="https://github.com/Hakunam97/TIL/blob/master/OS/images/%EA%B0%80%EC%83%81%EB%A9%94%EB%AA%A8%EB%A6%AC.PNG" width="50%" height="30%" title="me" alt="me"></img>
+<img src="https://github.com/Hakunam97/TIL/blob/master/OS/images/%EA%B0%80%EC%83%81%EB%A9%94%EB%AA%A8%EB%A6%AC.PNG" width="60%" height="40%" title="me" alt="me"></img>
+
+- Process에 메모리 공간 부여 -> Virtual memory space (VMS) (4GB)
+- Process가 부여 받은 VMS 모두 쓰진 않음
+- MS Work가 동시에 실행 -> 이 프로세스 공간 확보를 위해 RAM에 있는 조각난 Internet Process 메모리를 HDD로 옮김(mapping). (**Page-out**, 반대는 Page-in)
+- OS가 이러한 정리를 해줌 (두 Process가 서로 침범할 수 없음)
+
+=> 이를 **가상화** 라고 함 ***(RAM, 보조기억장치를 하나의 논리적 기억장치로 사용하는 것)***
+
+#### <가상 메모리 시스템을 사용하는 이유>
+- 각 프로세스 공간을 완벽히 분리, 통제
+- 프로세스 오류가 운영체제에 영향을 못하도록 차단
+- 메모리가 부족해도 여러 프로그램들이 작동하는 등 자원을 효율적 활용
