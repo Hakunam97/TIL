@@ -77,7 +77,8 @@ Categories
 
 ## 💻Computer Science
 - [01. Bit,Binary.md](https://github.com/Hakunam97/TIL/blob/master/Computer%20Science/01_%EB%B9%84%ED%8A%B8%EC%99%80%EC%A7%84%EC%88%98.md)
-- [02. Computer Structure](https://github.com/Hakunam97/TIL/blob/master/Computer%20Science/02_%EC%BB%B4%ED%93%A8%ED%84%B0%EA%B5%AC%EC%A1%B0.md)
+- [02. Computer Structure.md](https://github.com/Hakunam97/TIL/blob/master/Computer%20Science/02_%EC%BB%B4%ED%93%A8%ED%84%B0%EA%B5%AC%EC%A1%B0.md)
+- [03. Programming.md](https://github.com/Hakunam97/TIL/blob/master/Computer%20Science/03.%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D.md)
 
 ## 💻OS
 - [01. Basic_OS.md](https://github.com/Hakunam97/TIL/blob/master/OS/Basic_OS.md)
