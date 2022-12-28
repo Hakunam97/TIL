@@ -80,3 +80,4 @@ Categories
 - [02. Computer Structure](https://github.com/Hakunam97/TIL/blob/master/Computer%20Science/02_%EC%BB%B4%ED%93%A8%ED%84%B0%EA%B5%AC%EC%A1%B0.md)
 
 ## 💻OS
+- [01. Basic_OS.md](https://github.com/Hakunam97/TIL/blob/master/OS/Basic_OS.md)
