@@ -67,4 +67,4 @@ Semaphore와는 달리 오직 1개의 프로세스 혹은 스레드만 접근할
 ### (2) 교착상태 (Deadlock)
 > 프로세스가 자원을 얻지 못해 다음 처리를 하지 못하는 상태
 
-- 
+<img src="https://github.com/Hakunam97/TIL/blob/master/Computer%20Science/images/deadlock.JPG" width="80%" height="60%" title="deadlock" alt="deadlock"></img>
