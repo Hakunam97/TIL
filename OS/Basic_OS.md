@@ -105,4 +105,29 @@ Semaphore와는 달리 오직 1개의 프로세스 혹은 스레드만 접근할
 
 Kernel
 -------
+> 운영체제의 핵심
+1. I/O. 정보의 입출력 제어
+2. 자원 관리   
+CPU + Memory 관리 및 통제
+3. 접근 통제
 
+CPU는 Machine이라고도 함
+- S/W : Logical, **Virtual**   
+- H/W : Physical
+### (1) User mode
+
+
+### (2) Kernel mode
+
+- - -
+
+가상 메모리
+-------------
+
+Virtual -> Logical => S/W 구현
+
+Page -> Paging
+
+### Paging 파일
+> RAM처럼 사용하는 하드 디스크의 영역
+- HDD에서 RAM처럼 일부 용량을 RAM 영역을 끌고 옴
