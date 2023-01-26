@@ -2,7 +2,6 @@
 # chrome드라이버 자동 업데이트 : webdriver_manager  (pip install webdriver_manager)
 #--------------------------------------------------------------------------------------------------------------
 
-
 ## 셀레니움 기본설정
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
@@ -28,10 +27,11 @@ service = Service(executable_path=ChromeDriverManager().install())  # 크롬드�
 driver = webdriver.Chrome(service=service, options=chrome_options)  # options= 로 브라우저 바로 꺼짐을 방지
 
 # 웹페이지 해당 주소 이동
-driver.implicitly_wait(5)   # 웹페이지가 로딩 될때까지 5초 기다림
+driver.implicitly_wait(10)   # 웹페이지가 로딩 될때까지 5초 기다림
 driver.maximize_window()    # 화면 최대화
 
 driver.get("https://nid.naver.com/nidlogin.login?mode=form&url=https%3A%2F%2Fwww.naver.com")    # 네이버 로그인 주소
+
 
 #--------------------------------------------------------------------------------------------------------------
 ## 네이버 자동 로그인
@@ -59,3 +59,32 @@ login_btn.click()
 
 login_btn2 = driver.find_element(By.CSS_SELECTOR, "#new\.save")
 login_btn2.click()
+
+
+#--------------------------------------------------------------------------------------------------------------
+## 네이버 메일 자동화
+
+# 메일함 이동
+driver.get("https://mail.naver.com/")
+time.sleep(2)
+
+# 메일 쓰기 버튼 클릭
+driver.find_element(By.CSS_SELECTOR, "#root > div > nav > div > div.lnb_header > div.lnb_task > a.item.button_write").click()   # driver 함수에 바로 click도 가능
+time.sleep(2)
+
+# 받는사람
+driver.find_element(By.CSS_SELECTOR, "#user_input_1").send_keys("haknam0216@naver.com") # 바로 send_keys 입력하여 자기 자신에게 보내기 가능
+time.sleep(2)
+
+# 제목
+driver.find_element(By.CSS_SELECTOR, "#subject_title").send_keys("셀레니움으로 보낸 메일")
+time.sleep(2)
+
+# iframe 안으로 들어가기
+browser.switch_to.frame
+
+# 본문 
+driver.find_element(By.CSS_SELECTOR, "body > div > div.workseditor-content").send_keys("너무 신기해")
+
+# 보내기 버튼 클릭
+driver.find_element(By.CSS_SELECTOR, "#content > div.mail_toolbar.type_write > div:nth-child(1) > div > button.button_write_task").click()
