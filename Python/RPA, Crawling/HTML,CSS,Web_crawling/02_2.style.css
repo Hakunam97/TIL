@@ -1,0 +1,24 @@
+body {
+    text-align: center;
+}
+
+span {
+    color: steelblue;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul > li > a {
+    color: orange;
+}
+
+table {
+    margin: 0 auto;
+}
+
+.round {
+    border-radius: 50%;
+}
