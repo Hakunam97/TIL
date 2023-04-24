@@ -25,24 +25,22 @@ Categories
 * [OS](#💻os)
 - - -
 ## 💻Python
-<details>
-<summary>Basic functions</summary>
-<div markdown="1">
-- [01. 파이썬기초_기초.md](https://github.com/Hakunam97/TIL/blob/master/Python/Python_Basic/%5BCodeit%5DPython_%EA%B8%B0%EC%B4%88/01.%ED%8C%8C%EC%9D%B4%EC%8D%AC%EA%B8%B0%EC%B4%88_%EA%B8%B0%EC%B4%88.md).
-- [02. 파이썬기초_자료형.md](https://github.com/Hakunam97/TIL/blob/master/Python/Python_Basic/%5BCodeit%5DPython_%EA%B8%B0%EC%B4%88/02.%ED%8C%8C%EC%9D%B4%EC%8D%AC%EA%B8%B0%EC%B4%88_%EC%9E%90%EB%A3%8C%ED%98%95.md).
-- [03. 파이썬기초_제어문.md](https://github.com/Hakunam97/TIL/blob/master/Python/Python_Basic/%5BCodeit%5DPython_%EA%B8%B0%EC%B4%88/03.%ED%8C%8C%EC%9D%B4%EC%8D%AC%EA%B8%B0%EC%B4%88_%EC%A0%9C%EC%96%B4%EB%AC%B8.md).
-- [04. 파이썬기초_추상화.md](https://github.com/Hakunam97/TIL/blob/master/Python/Python_Basic/%5BCodeit%5DPython_%EA%B8%B0%EC%B4%88/04.%ED%8C%8C%EC%9D%B4%EC%8D%AC%EA%B8%B0%EC%B4%88_%EC%B6%94%EC%83%81%ED%99%94.md).
-- [05. 파이썬기초_응용.md](https://github.com/Hakunam97/TIL/blob/master/Python/Python_Basic/%5BCodeit%5DPython_%EA%B8%B0%EC%B4%88/05.%ED%8C%8C%EC%9D%B4%EC%8D%AC%EA%B8%B0%EC%B4%88_%EC%9D%91%EC%9A%A9.md).
-- [06. 파이썬기초_for,while,if.md](https://github.com/Hakunam97/TIL/blob/master/Python/Python_Basic/%5Bnadocoding%5DPython_%EA%B8%B0%EC%B4%88/06.%ED%8C%8C%EC%9D%B4%EC%8D%AC%EA%B8%B0%EC%B4%88_for%2Cwhile%2Cif.md).
-- [07. 파이썬기초_함수,변수,입출력.md](https://github.com/Hakunam97/TIL/blob/master/Python/Python_Basic/%5Bnadocoding%5DPython_%EA%B8%B0%EC%B4%88/07.%ED%8C%8C%EC%9D%B4%EC%8D%AC%EA%B8%B0%EC%B4%88_%ED%95%A8%EC%88%98%2C%EB%B3%80%EC%88%98%2C%EC%9E%85%EC%B6%9C%EB%A0%A5.md).
-- [08. 파이썬기초_class문제.md](https://github.com/Hakunam97/TIL/blob/master/Python/Python_Basic/%5Bnadocoding%5DPython_%EA%B8%B0%EC%B4%88/08.%ED%8C%8C%EC%9D%B4%EC%8D%AC%EA%B8%B0%EC%B4%88_class%EB%AC%B8%EC%A0%9C.md).
-- [09. 파이썬기초_error,module.md](https://github.com/Hakunam97/TIL/blob/master/Python/Python_Basic/%5Bnadocoding%5DPython_%EA%B8%B0%EC%B4%88/09.%ED%8C%8C%EC%9D%B4%EC%8D%AC%EA%B8%B0%EC%B4%88_error%2Cmodule.md).
-- [10. 파이썬기초_list.md](https://github.com/Hakunam97/TIL/blob/master/Python/Python_Basic/%5BCodeit%5DPython_%EB%8D%B0%EC%9D%B4%ED%84%B0/10.%ED%8C%8C%EC%9D%B4%EC%8D%AC%EA%B8%B0%EC%B4%88_list.md).
-- [11. 파이썬기초_dictionary.md](https://github.com/Hakunam97/TIL/blob/master/Python/Python_Basic/%5BCodeit%5DPython_%EB%8D%B0%EC%9D%B4%ED%84%B0/11.%ED%8C%8C%EC%9D%B4%EC%8D%AC%EA%B8%B0%EC%B4%88_dictionary.md).
-- [12. 파이썬기초_Aliasing.md](https://github.com/Hakunam97/TIL/blob/master/Python/Python_Basic/%5BCodeit%5DPython_%EB%8D%B0%EC%9D%B4%ED%84%B0/12.%ED%8C%8C%EC%9D%B4%EC%8D%AC%EA%B8%B0%EC%B4%88_Aliasing.md).
-- [13. 파이썬기초_for반복문.md](https://github.com/Hakunam97/TIL/blob/master/Python/Python_Basic/%5BCodeit%5DPython_%EB%8D%B0%EC%9D%B4%ED%84%B0/13.%ED%8C%8C%EC%9D%B4%EC%8D%AC%EA%B8%B0%EC%B4%88_for%EB%B0%98%EB%B3%B5%EB%AC%B8.md).
-</div>
-</details>
+
+* **Basic functions**
+  - [01. 파이썬기초_기초.md](https://github.com/Hakunam97/TIL/blob/master/Python/Python_Basic/%5BCodeit%5DPython_%EA%B8%B0%EC%B4%88/01.%ED%8C%8C%EC%9D%B4%EC%8D%AC%EA%B8%B0%EC%B4%88_%EA%B8%B0%EC%B4%88.md).
+  - [02. 파이썬기초_자료형.md](https://github.com/Hakunam97/TIL/blob/master/Python/Python_Basic/%5BCodeit%5DPython_%EA%B8%B0%EC%B4%88/02.%ED%8C%8C%EC%9D%B4%EC%8D%AC%EA%B8%B0%EC%B4%88_%EC%9E%90%EB%A3%8C%ED%98%95.md).
+  - [03. 파이썬기초_제어문.md](https://github.com/Hakunam97/TIL/blob/master/Python/Python_Basic/%5BCodeit%5DPython_%EA%B8%B0%EC%B4%88/03.%ED%8C%8C%EC%9D%B4%EC%8D%AC%EA%B8%B0%EC%B4%88_%EC%A0%9C%EC%96%B4%EB%AC%B8.md).
+  - [04. 파이썬기초_추상화.md](https://github.com/Hakunam97/TIL/blob/master/Python/Python_Basic/%5BCodeit%5DPython_%EA%B8%B0%EC%B4%88/04.%ED%8C%8C%EC%9D%B4%EC%8D%AC%EA%B8%B0%EC%B4%88_%EC%B6%94%EC%83%81%ED%99%94.md).
+  - [05. 파이썬기초_응용.md](https://github.com/Hakunam97/TIL/blob/master/Python/Python_Basic/%5BCodeit%5DPython_%EA%B8%B0%EC%B4%88/05.%ED%8C%8C%EC%9D%B4%EC%8D%AC%EA%B8%B0%EC%B4%88_%EC%9D%91%EC%9A%A9.md).
+  - [06. 파이썬기초_for,while,if.md](https://github.com/Hakunam97/TIL/blob/master/Python/Python_Basic/%5Bnadocoding%5DPython_%EA%B8%B0%EC%B4%88/06.%ED%8C%8C%EC%9D%B4%EC%8D%AC%EA%B8%B0%EC%B4%88_for%2Cwhile%2Cif.md).
+  - [07. 파이썬기초_함수,변수,입출력.md](https://github.com/Hakunam97/TIL/blob/master/Python/Python_Basic/%5Bnadocoding%5DPython_%EA%B8%B0%EC%B4%88/07.%ED%8C%8C%EC%9D%B4%EC%8D%AC%EA%B8%B0%EC%B4%88_%ED%95%A8%EC%88%98%2C%EB%B3%80%EC%88%98%2C%EC%9E%85%EC%B6%9C%EB%A0%A5.md).
+  - [08. 파이썬기초_class문제.md](https://github.com/Hakunam97/TIL/blob/master/Python/Python_Basic/%5Bnadocoding%5DPython_%EA%B8%B0%EC%B4%88/08.%ED%8C%8C%EC%9D%B4%EC%8D%AC%EA%B8%B0%EC%B4%88_class%EB%AC%B8%EC%A0%9C.md).
+  - [09. 파이썬기초_error,module.md](https://github.com/Hakunam97/TIL/blob/master/Python/Python_Basic/%5Bnadocoding%5DPython_%EA%B8%B0%EC%B4%88/09.%ED%8C%8C%EC%9D%B4%EC%8D%AC%EA%B8%B0%EC%B4%88_error%2Cmodule.md).
+  - [10. 파이썬기초_list.md](https://github.com/Hakunam97/TIL/blob/master/Python/Python_Basic/%5BCodeit%5DPython_%EB%8D%B0%EC%9D%B4%ED%84%B0/10.%ED%8C%8C%EC%9D%B4%EC%8D%AC%EA%B8%B0%EC%B4%88_list.md).
+  - [11. 파이썬기초_dictionary.md](https://github.com/Hakunam97/TIL/blob/master/Python/Python_Basic/%5BCodeit%5DPython_%EB%8D%B0%EC%9D%B4%ED%84%B0/11.%ED%8C%8C%EC%9D%B4%EC%8D%AC%EA%B8%B0%EC%B4%88_dictionary.md).
+  - [12. 파이썬기초_Aliasing.md](https://github.com/Hakunam97/TIL/blob/master/Python/Python_Basic/%5BCodeit%5DPython_%EB%8D%B0%EC%9D%B4%ED%84%B0/12.%ED%8C%8C%EC%9D%B4%EC%8D%AC%EA%B8%B0%EC%B4%88_Aliasing.md).
+  - [13. 파이썬기초_for반복문.md](https://github.com/Hakunam97/TIL/blob/master/Python/Python_Basic/%5BCodeit%5DPython_%EB%8D%B0%EC%9D%B4%ED%84%B0/13.%ED%8C%8C%EC%9D%B4%EC%8D%AC%EA%B8%B0%EC%B4%88_for%EB%B0%98%EB%B3%B5%EB%AC%B8.md).
+
   
 * **Data Visualization**
   - [데이터시각화01.ipynb](https://github.com/Hakunam97/TIL/blob/master/Python/Python_Data_visualization/data/%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%8B%9C%EA%B0%81%ED%99%9401.ipynb).
@@ -89,3 +87,4 @@ Categories
 
 ## 💻OS
 - [01. Basic_OS.md](https://github.com/Hakunam97/TIL/blob/master/OS/Basic_OS.md)
+
