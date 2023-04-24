@@ -2,7 +2,7 @@
 =================
 
 * **오늘 배운, 알게 된, 학습한 내용을 정리해두는 저장소**
-* **좋은 개발자가 되기 위해 하루동안 학습한 내용이나 개발관련 경험들을 기록으로 남긴다.**
+* **좋은 엔지니어가 되기 위해 하루동안 학습한 내용이나 관련 경험들을 기록으로 남긴다.**
 * **Stack별로 정리!**
 * **조급해 하지 말고 멈추지도 말며 천천히 꾸준하게 한다.**
 ---
@@ -25,7 +25,9 @@ Categories
 * [OS](#💻os)
 - - -
 ## 💻Python
-* **Basic functions**
+<details>
+<summary>Basic functions</summary>
+<div markdown="1">
   - [01. 파이썬기초_기초.md](https://github.com/Hakunam97/TIL/blob/master/Python/Python_Basic/%5BCodeit%5DPython_%EA%B8%B0%EC%B4%88/01.%ED%8C%8C%EC%9D%B4%EC%8D%AC%EA%B8%B0%EC%B4%88_%EA%B8%B0%EC%B4%88.md).
   - [02. 파이썬기초_자료형.md](https://github.com/Hakunam97/TIL/blob/master/Python/Python_Basic/%5BCodeit%5DPython_%EA%B8%B0%EC%B4%88/02.%ED%8C%8C%EC%9D%B4%EC%8D%AC%EA%B8%B0%EC%B4%88_%EC%9E%90%EB%A3%8C%ED%98%95.md).
   - [03. 파이썬기초_제어문.md](https://github.com/Hakunam97/TIL/blob/master/Python/Python_Basic/%5BCodeit%5DPython_%EA%B8%B0%EC%B4%88/03.%ED%8C%8C%EC%9D%B4%EC%8D%AC%EA%B8%B0%EC%B4%88_%EC%A0%9C%EC%96%B4%EB%AC%B8.md).
@@ -39,6 +41,8 @@ Categories
   - [11. 파이썬기초_dictionary.md](https://github.com/Hakunam97/TIL/blob/master/Python/Python_Basic/%5BCodeit%5DPython_%EB%8D%B0%EC%9D%B4%ED%84%B0/11.%ED%8C%8C%EC%9D%B4%EC%8D%AC%EA%B8%B0%EC%B4%88_dictionary.md).
   - [12. 파이썬기초_Aliasing.md](https://github.com/Hakunam97/TIL/blob/master/Python/Python_Basic/%5BCodeit%5DPython_%EB%8D%B0%EC%9D%B4%ED%84%B0/12.%ED%8C%8C%EC%9D%B4%EC%8D%AC%EA%B8%B0%EC%B4%88_Aliasing.md).
   - [13. 파이썬기초_for반복문.md](https://github.com/Hakunam97/TIL/blob/master/Python/Python_Basic/%5BCodeit%5DPython_%EB%8D%B0%EC%9D%B4%ED%84%B0/13.%ED%8C%8C%EC%9D%B4%EC%8D%AC%EA%B8%B0%EC%B4%88_for%EB%B0%98%EB%B3%B5%EB%AC%B8.md).
+</div>
+</details>
   
 * **Data Visualization**
   - [데이터시각화01.ipynb](https://github.com/Hakunam97/TIL/blob/master/Python/Python_Data_visualization/data/%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%8B%9C%EA%B0%81%ED%99%9401.ipynb).
